@@ -1,0 +1,15 @@
+### services - DB created on local Arangodb envirnment. Consist of one collection and one document imported from arangodb.txt
+
+
+
+
+FOR doc in services   
+
+LET model = [doc.serviceModel, doc.expectedModel]
+
+    FOR m in model
+
+        FILTER m.serviceSpecification.name == 'otn-trunk-cfs'
+        FILTER m.serviceCharacteristic[1].value.`e2e-client-service`.`domain-client-service`[0].domain == 'Ciena'
+
+        RETURN {lbz: m.serviceCharacteristic[1].value.`e2e-client-service`.`domain-client-service`[0].lbz, `rfs-id`: m.serviceCharacteristic[1].value.`e2e-client-service`.`domain-client-service`[0].`rfs-id`, `operational-state`: m.serviceCharacteristic[1].value.`e2e-client-service`.`domain-client-service`[0].`operational-state`, `user-label`: m.serviceCharacteristic[1].value.`e2e-client-service`.`domain-client-service`[0].`user-label`  }

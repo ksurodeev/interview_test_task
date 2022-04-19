@@ -1,0 +1,173 @@
+{
+  "serviceType": "EXTERNAL",
+  "createdDate": {
+    "$date": "2020-09-23T19:19:31.72Z"
+  },
+  "lastModifiedDate": {
+    "$date": "2020-09-24T10:10:25.682Z"
+  },
+  "isTestService": false,
+  "domain": [
+    "optical"
+  ],
+  "sourceName": "Service Discovery",
+  "serviceModel": {
+    "_id": "5f6b9fc0744004535db473f0",
+    "requestType": "EXTERNAL",
+    "name": "4C6/9980-49/911/9115/7XAA-49/911/9115/7XAB_proxy_mock",
+    "state": "Inactive",
+    "serviceSpecification": {
+      "_id": "otn-trunk-cfs_7.0.1600941066",
+      "name": "otn-trunk-cfs",
+      "version": "7.0.1600941066"
+    },
+    "serviceCharacteristic": [
+      {
+        "name": "mkey",
+        "value": {
+          "mkey": "-2451336432277347877-CFS"
+        }
+      },
+      {
+        "name": "complexServiceData",
+        "value": {
+          "e2e-client-service": {
+            "bandwidth": "10GbE-LAN",
+            "domain-client-service": [
+              {
+                "user-label": "4C6/9980-49/911/9115/7XAA-49/911/9115/7XAB_proxy_mock",
+                "endpoint": [
+                  {
+                    "ne-name": "49/911/9115/7XAA",
+                    "port": 1,
+                    "slot": 1,
+                    "shelf": 1,
+                    "interface-name": "ETH10G-1-1-1",
+                    "operational-state": "up"
+                  },
+                  {
+                    "ne-name": "49/911/9115/7XAB",
+                    "port": 1,
+                    "slot": 1,
+                    "shelf": 1,
+                    "interface-name": "ETH10G-1-1-1",
+                    "operational-state": "up"
+                  }
+                ],
+                "rfs-id": "49/911/9115/7XAA 1-1-1 - 49/911/9115/7XAB 1-1-1",
+                "domain": "Ciena",
+                "lsz": "4C6",
+                "lbz": "4C6/9980-49/911/9115/7XAA-49/911/9115/7XAB_proxy_mock",
+                "ordnr": "9980",
+                "protection-type": "none",
+                "tag": "49_911_9115_7XAA 1-1-1 - 49_911_9115_7XAB 1-1-1",
+                "operational-state": "up"
+              }
+            ],
+            "direction": "bidirectional"
+          }
+        }
+      },
+      {
+        "name": "supportingResources",
+        "value": [
+          {
+            "mkey": "a040f0a4-21e5-36d6-a067-b5c71193a8c8::TPE_a040f0a4-21e5-36d6-a067-b5c71193a8c8::EQPT_1_1_1-1-CTPClientToClient-1",
+            "@referredType": "interface",
+            "provider": "Active Inventory",
+            "name": "OTM2-1-1-1",
+            "id": "d2d7963b-3128-420d-96ce-7dba2889930d"
+          },
+          {
+            "mkey": "25758cd9-7f5c-3a8a-bc55-b388087a486f::TPE_25758cd9-7f5c-3a8a-bc55-b388087a486f::EQPT_1_1_1-1-CTPClientToClient-1",
+            "@referredType": "interface",
+            "provider": "Active Inventory",
+            "name": "OTM2-1-1-1",
+            "id": "35e96569-b9f5-46eb-b03b-8e80d9c5df37"
+          }
+        ]
+      }
+    ],
+    "serviceRelationship": [
+      {
+        "type": "otn-trunk",
+        "service": {
+          "_id": "5f6b9f7b744004535db473ed"
+        }
+      }
+    ],
+    "relatedParty": [],
+    "supportingService": [],
+    "supportingResource": []
+  },
+  "expectedModel": {
+    "_id": "5f6b9fc0744004535db473f0",
+    "requestType": "EXTERNAL",
+    "name": "4C6/9980-49/911/9115/7XAA-49/911/9115/7XAB_proxy_mock",
+    "state": "Inactive",
+    "serviceSpecification": {
+      "_id": "otn-trunk-cfs_7.0.1600941066",
+      "name": "otn-trunk-cfs",
+      "version": "7.0.1600941066"
+    },
+    "serviceCharacteristic": [
+      {
+        "name": "mkey",
+        "value": {
+          "mkey": "-2451336432277347877-CFS"
+        }
+      },
+      {
+        "name": "complexServiceData",
+        "value": {
+          "e2e-client-service": {
+            "bandwidth": "10GbE-LAN",
+            "domain-client-service": [
+              {
+                "user-label": "4C6/9980-49/911/9115/7XAA-49/911/9115/7XAB_proxy_mock",
+                "endpoint": [
+                  {
+                    "ne-name": "49/911/9115/7XAA",
+                    "port": 1,
+                    "slot": 1,
+                    "shelf": 1,
+                    "interface-name": "ETH10G-1-1-1",
+                    "operational-state": "up"
+                  },
+                  {
+                    "ne-name": "49/911/9115/7XAB",
+                    "port": 1,
+                    "slot": 1,
+                    "shelf": 1,
+                    "interface-name": "ETH10G-1-1-1",
+                    "operational-state": "up"
+                  }
+                ],
+                "rfs-id": "49/911/9115/7XAA 1-1-1 - 49/911/9115/7XAB 1-1-1",
+                "domain": "Ciena",
+                "lsz": "4C6",
+                "lbz": "4C6/9980-49/911/9115/7XAA-49/911/9115/7XAB_proxy_mock",
+                "ordnr": "9980",
+                "protection-type": "none",
+                "tag": "49_911_9115_7XAA 1-1-1 - 49_911_9115_7XAB 1-1-1",
+                "operational-state": "up"
+              }
+            ],
+            "direction": "bidirectional"
+          }
+        }
+      }
+    ],
+    "serviceRelationship": [
+      {
+        "type": "otn-trunk",
+        "service": {
+          "_id": "5f6b9f7b744004535db473ed"
+        }
+      }
+    ],
+    "relatedParty": [],
+    "supportingService": [],
+    "supportingResource": []
+  }
+}

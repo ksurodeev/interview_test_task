@@ -1,0 +1,65 @@
+module repka {
+
+	yang-version 1.1;
+	namespace "https://russian-fairytales.com/repka";
+	prefix "repka";
+	organization "JSC Russian Fairytales";
+	contact 
+		"Konstantin Surodeev
+		email: ksurodeev@gmail.com"; 
+		
+	description	
+		"This is module for testing purposes";
+		
+	revision 2022-02-14 {
+		description
+			"version 1.0";
+	}
+	
+	typedef age {
+		type uint8 {
+			range 0..100;
+		}
+	}
+
+	typedef mass {
+		type uint16 {
+			range 0..500;
+		}
+	}
+
+	container Fairytale {
+
+		list character {
+			key "Name"; 
+			leaf Name {
+				type string;
+				description "Character's name";
+			}				
+
+			leaf Age {
+				type age;
+				description "Character's age";
+			}
+				
+		}
+
+		list vegetable {
+			key "Type";
+			leaf Type {
+				type string;
+			}
+			leaf Mass {
+				type mass;
+				description "Mass of vegetable";
+			}
+
+			leaf Size {
+				type string;
+				default "bolshaya-prebolshaya";
+			}
+		}
+	}		
+}	
+		
+				

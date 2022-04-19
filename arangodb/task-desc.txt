@@ -1,0 +1,7 @@
+Используюя arangodb query language (AQL) написать запрос, который будет искать все записи, относящиеся к:
+сервису otn-trunk-cfs с domain == Ciena 
+
+и сформировать в качестве результата вывод с полями:
+
+lbz, rfs-id, operational-state, user-label
+
